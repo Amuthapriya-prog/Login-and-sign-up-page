@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Sign Up</title>
+        <link rel="stylesheet" href="style5.css">
+    </head>
+    <body>
+        <section>
+            <div class="error"></div>
+            <div class="container">
+                <div class="user loginpage">
+                    <div class="imgbox">
+                        <img src="https://app.mauamethodistcollege.com/images/icon_login.png">
+                    </div>
+                    <div class="formbox">
+                        <form id="form">
+                            <h2>Student Login</h2>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="password" name="password" placeholder="Password" id="password" required>
+                            <input type="submit" name="" value="Submit">
+                            <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user signuppage">
+                    <div class="formbox">
+                        <form id="myform" onsubmit="return validation()">
+                            <h2>Register</h2>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="text" name="rollnumber" id="rollnumber" placeholder="Roll Number" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="password" name="password" placeholder="Password" id="password" class="password" required>
+                            <input type="text" name="confirm password" placeholder="Confirm Password" id="confirmPassword" class="confirmPassword" id="confirm password" required>
+                            <input class="button" type="submit" name="" value="Register" onclick="ValidateEmail(document.container)"/>
+                            <p class="signin">Do you have an account? <a href="#" onclick="toggleForm();">Login</a></p>
+                        </form>
+                    </div>
+                    <div class="imgbox">
+                        <img src="https://www.jing.fm/clipimg/detail/140-1402946_students-registration.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="app3.js">
+
+        </script>
+    </body>
+</html>
